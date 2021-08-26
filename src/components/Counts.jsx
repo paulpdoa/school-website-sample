@@ -55,20 +55,20 @@ const Counts = () => {
                     // initial="hidden"
                     // animate={animation}
                     >School Sample Website</h2>
-                    <div className="grid lg:grid-cols-3 grid-rows-3 lg:gap-10 gap-2 justify-items-center mt-16"
+                    <div className="grid lg:grid-cols-3 lg:gap-10 gap-2 justify-items-center mt-16"
                     // variants={cardVariant}
                     // initial="hidden"
                     // animate={animation}
                     >
-                        <div className="text-gray-100 bg-gray-900 opacity-70 text-center w-72 p-2">
+                        <div className="text-gray-100 bg-gray-900 opacity-70 text-center w-72 lg:h-40 p-2 flex justify-center items-center flex-col">
                             <h2 className="text-6xl font-semibold">5</h2>
                             <span className="font-roboto font-normal text-xl">Awards</span>
                         </div>
-                        <div className="text-gray-100 bg-gray-900 opacity-70 text-center w-72 p-2">
+                        <div className="text-gray-100 bg-gray-900 opacity-70 text-center w-72 lg:h-40 p-2 flex justify-center items-center flex-col">
                             <h2 className="text-6xl font-semibold">1</h2>
                             <span className="font-roboto font-normal text-xl">Locations</span>
                         </div>
-                        <div className="text-gray-100 bg-gray-900 opacity-70 text-center w-72 p-2">
+                        <div className="text-gray-100 bg-gray-900 opacity-70 text-center w-72 lg:h-40 p-2 flex justify-center items-center flex-col">
                             <h2 className="text-6xl font-semibold">75</h2>
                             <span className="font-roboto font-normal text-xl">Employess</span>
                         </div>

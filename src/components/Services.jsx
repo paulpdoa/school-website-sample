@@ -49,7 +49,7 @@ const Services = () => {
     return (
         <div className="flex justify-center">
             <div className="max-w-7xl px-16 py-16 w-full">
-                <h2 className="font-roboto text-gray-900 font-bold text-3xl text-center uppercase"
+                <h2 className="font-roboto text-gray-900 font-bold lg:text-3xl text-2xl text-center uppercase"
                 // variants={titleVariant}
                 // initial="hidden"
                 // animate={animation}

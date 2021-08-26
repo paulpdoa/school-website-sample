@@ -5,7 +5,7 @@ const Inquiries = () => {
         <div className="flex justify-center inquiriesBg">
             <div className="max-w-7xl px-16 py-16 grid lg:grid-cols-2 gap-10 w-full text-gray-100">
                 <div>
-                    <h2 className="font-roboto font-bold text-3xl text-center">Frequently Asked Questions</h2>
+                    <h2 className="font-roboto font-bold lg:text-3xl text-2xl text-center">Frequently Asked Questions</h2>
                     <div className="grid grid-rows-1 text-black gap-5 mt-6">
                         <div className="h-auto bg-gray-100 p-5">
                             <label className="font-roboto italic font-semibold" htmlFor="1">#1 Lorem ipsum dolor sit amet consectetur adipisicing.</label>
@@ -15,22 +15,22 @@ const Inquiries = () => {
                 </div>
                 <div>
                     <div className="bg-gray-100 py-16 text-black">
-                        <h2 className="font-roboto font-normal text-3xl text-center">Send Us Your Inquiries</h2>
-                        <form className="grid grid-rows-2 gap-5 justify-items-center">
-                            <div className="grid lg:grid-cols-2 gap-4 mt-5 px-16 w-full">
-                                <div>
+                        <h2 className="font-roboto font-normal lg:text-3xl text-2xl text-center">Send Us Your Inquiries</h2>
+                        <form className="grid lg:grid-rows-2 gap-5 justify-items-center">
+                            <div className="grid lg:grid-cols-2 justify-items-center gap-4 mt-5 px-16 w-full">
+                                <div className="w-full lg:w-auto">
                                     <input className="p-2 outline-none bg-gray-200 w-full" type="text" placeholder="Name" required />
                                 </div>
-                                <div>
+                                <div className="w-full lg:w-auto">
                                     <input className="p-2 outline-none bg-gray-200 w-full" type="email" placeholder="Email Address" required />
                                 </div>
                             </div>
                             <div className="w-full px-16">
-                                <div className="w-full">
+                                <div className="lg:w-auto w-full">
                                     <textarea className="p-2 outline-none w-full h-auto bg-gray-200" placeholder="Message" required></textarea>
                                 </div>
                             </div>
-                            <div className="flex justify-end w-full px-16">
+                            <div className="flex lg:justify-end justify-center">
                                 <div className="mt-1">
                                     <button className="Btn bg-blue-900 px-1 py-2 text-lg flex justify-center items-center w-40 text-gray-100">
                                         Submit

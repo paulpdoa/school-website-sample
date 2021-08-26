@@ -65,12 +65,12 @@ const Announcements = () => {
         <div className="flex justify-center announceBg">
             <div className="max-w-7xl px-16 py-16 w-full">
                 <div> {/* announcements */}
-                    <h2 className="uppercase font-roboto text-gray-800 font-bold text-3xl text-center"
+                    <h2 className="uppercase font-roboto text-gray-800 font-bold lg:text-3xl text-2xl text-center"
                     // variants={titleVariant}
                     // initial="hidden"
                     // animate={animation}
                     >Announcements</h2>
-                    <div className="grid lg:grid-cols-3 grid-rows-3 justify-items-center gap-5 mt-10"
+                    <div className="grid lg:grid-cols-3 justify-items-center gap-5 mt-10"
                     // variants={cardVariant}
                     // initial="hidden"
                     // animate={animation}
@@ -130,12 +130,12 @@ const Announcements = () => {
                 </div>
                 <div className="mt-16"> {/* news and events */}
                    <div className="border-t-4 border-yellow-300">
-                      <h2 className="uppercase font-roboto text-gray-800 font-bold text-3xl text-center mt-16"
+                      <h2 className="uppercase font-roboto text-gray-800 font-bold lg:text-3xl text-2xl text-center mt-16"
                     //   variants={titleVariant}
                     //   initial="hidden"
                     //   animate={animation}
                       >News & Events</h2>
-                      <div className="grid lg:grid-cols-3 grid-rows-2 gap-5 mt-10"
+                      <div className="grid lg:grid-cols-3 gap-5 mt-10"
                     //   variants={cardVariant}
                     //   initial="hidden"
                     //   animate={animation}

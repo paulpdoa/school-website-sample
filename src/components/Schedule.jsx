@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import Calendar from 'react-calendar';
-import 'react-calendar/dist/Calendar.css';
+// import 'react-calendar/dist/Calendar.css';
 import { motion,useAnimation } from 'framer-motion';
 import {useInView } from 'react-intersection-observer';
 import { useEffect } from 'react';
@@ -71,18 +71,18 @@ const Schedule = () => {
     return (
         <div className="flex justify-center">
             <div className="max-w-7xl py-16 px-16 w-full">
-                <h2 className="uppercase font-roboto text-gray-800 font-bold text-3xl text-center w-full"
+                <h2 className="uppercase font-roboto text-gray-800 font-bold lg:text-3xl text-2xl text-center w-full"
                 // variants={titleVariant}
                 // initial="hidden"
                 // animate={animation}
                 >Calendar Updates</h2>
-                <div className="grid lg:grid-cols-2 gap-4 py-16 justify-items-center">
+                <div className="grid lg:grid-cols-2 gap-4 py-16 justify-items-center w-full">
                     <div className="flex justify-center items-center"
                     // variants={calendarVariant}
                     // initial="hidden"
                     // animate={animation}
                     >
-                        <Calendar value={date} onChange={() => onChange(date)} />
+                        <Calendar className="font-poppins" value={date} onChange={() => onChange(date)} />
                     </div>
                     <div className="flex justify-center items-center"
                     // variants={eventVariant}

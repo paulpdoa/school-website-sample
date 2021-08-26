@@ -77,7 +77,7 @@ const SubFooter = () => {
                         </div>
                     </div>
 
-                    <div>
+                    <div className='w-full'>
                         <h3>Contact Info</h3>
                         <div className="mt-3 flex gap-2 text-justify">
                             <div>
@@ -103,9 +103,9 @@ const SubFooter = () => {
                         </div>
                     </div>
 
-                    <div>
+                    <div className="w-full">
                         <h3>Map</h3>
-                        <iframe title="South Hill School Inc, Map" className="border-0 mt-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3868.519970667988!2d121.25358930643962!3d14.164295705120228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd60aec9b4bd37%3A0x8d8413d1b6c1e8cc!2sSouth%20Hill%20School%20Inc.!5e0!3m2!1sen!2sph!4v1629968009126!5m2!1sen!2sph" width="300" height="300" allowFullScreen={false} loading="lazy"></iframe>
+                        <iframe title="South Hill School Inc, Map" className="border-0 mt-3 w-full h-52" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3868.519970667988!2d121.25358930643962!3d14.164295705120228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd60aec9b4bd37%3A0x8d8413d1b6c1e8cc!2sSouth%20Hill%20School%20Inc.!5e0!3m2!1sen!2sph!4v1629968009126!5m2!1sen!2sph" allowFullScreen={false} loading="lazy"></iframe>
                     </div>
                 </div>
             </div>
