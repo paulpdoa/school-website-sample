@@ -3,64 +3,64 @@ import { motion,useAnimation } from 'framer-motion';
 import {useInView } from 'react-intersection-observer';
 import { useEffect } from 'react';
 
-const imageVariant = {
-    hidden: {
-        x:-50,
-        opacity:0
-    },
-    visible: {
-        x:0,
-        opacity:1,
-        transition: {
-            duration:1
-        }
-    }
-}
+// const imageVariant = {
+//     hidden: {
+//         x:-50,
+//         opacity:0
+//     },
+//     visible: {
+//         x:0,
+//         opacity:1,
+//         transition: {
+//             duration:1
+//         }
+//     }
+// }
 
-const messageVariant = {
-    hidden: {
-        x:50,
-        opacity:0
-    },
-    visible: {
-        x:0,
-        opacity:1,
-        transition: {
-            duration:1
-        }
-    }
-}
+// const messageVariant = {
+//     hidden: {
+//         x:50,
+//         opacity:0
+//     },
+//     visible: {
+//         x:0,
+//         opacity:1,
+//         transition: {
+//             duration:1
+//         }
+//     }
+// }
 
 const Message = () => {
 
-    const animation = useAnimation();
-    const {ref,inView} = useInView({
-        threshold: 0.3
-    });
+    // const animation = useAnimation();
+    // const {ref,inView} = useInView({
+    //     threshold: 0.3
+    // });
 
-    useEffect(() => {
-        if(inView) {
-            animation.start('visible')
-        } else {
-            animation.start('hidden')
-        }
-    })
+    // useEffect(() => {
+    //     if(inView) {
+    //         animation.start('visible')
+    //     } else {
+    //         animation.start('hidden')
+    //     }
+    // })
 
     return (
         <div className="flex justify-center">
-            <div ref={ref} className="max-w-7xl w-full px-16 py-16">
-                <div className="border-t-4 border-yellow-200 py-20 grid grid-cols-2">   
-                    <motion.div className="flex justify-center items-center"
-                    variants={imageVariant}
-                    initial="hidden"
-                    animate={animation}
+            <div className="max-w-7xl w-full px-16 py-16">
+                <div className="border-t-4 border-yellow-200 py-20 lg:grid lg:grid-cols-2">   
+                    <div className="flex justify-center items-center"
+                    // variants={imageVariant}
+                    // initial="hidden"
+                    // animate={animation}
                     >
-                        <img className="object-cover w-3/4" src="/images/speech.jpg" alt="speech" />
-                    </motion.div>
-                    <motion.div className="text-center"
-                    variants={messageVariant}
-                    initial="hidden"
-                    animate={animation}
+                        <img className="object-cover lg:w-3/4 w-full shadow-xl" src="/images/speech.jpg" alt="speech" />
+                    </div>
+                    <div className="text-center lg:py-0 py-5"
+                    // variants={messageVariant}
+                    // initial="hidden"
+                    // animate={animation}
                     >
                         <h2 className="uppercase text-2xl text-gray-800 font-roboto font-bold">Sample Website Message</h2>
                         <h3 className="font-semibold text-xl text-blue-900 font-roboto">Sample <span className="text-yellow-500">Website</span></h3>
@@ -78,7 +78,7 @@ const Message = () => {
                                 </div>
                             </div>  
                         </div>
-                    </motion.div>
+                    </div>
                 </div>
             </div>
         </div>

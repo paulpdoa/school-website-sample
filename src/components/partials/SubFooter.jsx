@@ -4,9 +4,9 @@ const SubFooter = () => {
     return (
         <footer className="flex justify-center bg-gray-800 h-auto text-gray-100">
             <div className="max-w-7xl w-full px-16">
-                <div className="flex justify-around p-5 border-b border-gray-700 w-full items-center gap-10 py-10">
-                    <div>
-                        <p className="font-bold p-5 border-2 border-blue-900 rounded-xl">School Logo</p>
+                <div className="lg:flex lg:justify-around grid grid-rows-4 gap-10 p-5 border-b border-gray-700 w-full items-center lg:gap-10 py-10">
+                    <div className="w-32">
+                        <p className="font-bold lg:p-5 p-2 text-center border-2 border-blue-900 rounded-xl">School Logo</p>
                     </div>
                     <div className="flex gap-2 items-center">
                         <svg className="w-9 h-9" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -28,7 +28,7 @@ const SubFooter = () => {
                     </div>
                 </div>
 
-                <div className="grid grid-cols-4 gap-20 py-10 w-full justify-items-center">
+                <div className="grid lg:grid-cols-4 lg:gap-20 gap-10 py-10 w-full justify-items-center">
                     <div>
                         <h3>About Us</h3>
                         <p className="mt-3 italic text-sm text-justify font-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem deleniti perspiciatis modi architecto illo est molestias amet, pariatur odio eum quisquam nobis tempora, similique iusto eaque officia soluta alias maiores.</p>
@@ -54,7 +54,7 @@ const SubFooter = () => {
                         </div>
                         <div className="mt-5">
                             <h3>Our Visitors</h3>
-                            <div className="text-sm">
+                            <div className="text-sm mt-3">
                                 <div className="flex gap-2 items-center">
                                     <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
@@ -105,7 +105,7 @@ const SubFooter = () => {
 
                     <div>
                         <h3>Map</h3>
-                        <p>Map Here</p>
+                        <iframe title="South Hill School Inc, Map" className="border-0 mt-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3868.519970667988!2d121.25358930643962!3d14.164295705120228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd60aec9b4bd37%3A0x8d8413d1b6c1e8cc!2sSouth%20Hill%20School%20Inc.!5e0!3m2!1sen!2sph!4v1629968009126!5m2!1sen!2sph" width="300" height="300" allowFullScreen={false} loading="lazy"></iframe>
                     </div>
                 </div>
             </div>

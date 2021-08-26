@@ -1,67 +1,67 @@
 import { motion,useAnimation } from 'framer-motion';
 import {useInView } from 'react-intersection-observer';
-import React,{ useState,useEffect } from 'react'
+import React,{ useEffect } from 'react'
 
-const titleVariant = {
-    hidden: {
-        y:-50,
-        opacity:0
-    },
-    visible: {
-        y:0,
-        opacity:1,
-        transition: {
-            duration:1
-        }
-    }
-}
+// const titleVariant = {
+//     hidden: {
+//         y:-50,
+//         opacity:0
+//     },
+//     visible: {
+//         y:0,
+//         opacity:1,
+//         transition: {
+//             duration:1
+//         }
+//     }
+// }
 
-const cardVariant = {
-    hidden: {
-        opacity:0,
-        scale:0
-    },
-    visible: {
-        opacity:1,
-        scale:1,
-        transition: {
-            duration:1,
-            delay:0.5
-        }
-    }
-}
+// const cardVariant = {
+//     hidden: {
+//         opacity:0,
+//         scale:0
+//     },
+//     visible: {
+//         opacity:1,
+//         scale:1,
+//         transition: {
+//             duration:1,
+//             delay:0.5
+//         }
+//     }
+// }
 
 const Services = () => {
 
-    const animation = useAnimation();
-    const {ref,inView} = useInView({
-        threshold: 0.3
-    });
+    // const animation = useAnimation();
+    // const {ref,inView} = useInView({
+    //     threshold: 0.3
+    // });
 
-    useEffect(() => {
-        if(inView) {
-            animation.start('visible')
-        } else {
-            animation.start('hidden')
-        }
-    })
+    // useEffect(() => {
+    //     if(inView) {
+    //         animation.start('visible')
+    //     } else {
+    //         animation.start('hidden')
+    //     }
+    // })
 
     return (
         <div className="flex justify-center">
-            <div ref={ref} className="max-w-7xl px-16 py-16 w-full">
-                <motion.h2 className="font-roboto text-gray-900 font-bold text-3xl text-center uppercase"
-                variants={titleVariant}
-                initial="hidden"
-                animate={animation}
-                >Online Services</motion.h2>
-                <motion.div className="text-center mt-10"
-                variants={cardVariant}
-                initial="hidden"
-                animate={animation}
+            <div className="max-w-7xl px-16 py-16 w-full">
+                <h2 className="font-roboto text-gray-900 font-bold text-3xl text-center uppercase"
+                // variants={titleVariant}
+                // initial="hidden"
+                // animate={animation}
+                >Online Services</h2>
+                <div className="text-center mt-10"
+                // variants={cardVariant}
+                // initial="hidden"
+                // animate={animation}
                 >
                     <span className="text-gray-600 font-medium">Your safety is our priority.</span>
                     <p className="text-gray-600 font-medium">APPLY, ENROLL, RESERVE, and REQUEST documents online!</p>
-                    <div className="grid grid-cols-4 justify-items-center py-10">
+                    <div className="grid lg:grid-cols-4 gap-5 justify-items-center py-10">
                         <div className="border-2 border-gray-500 p-2 flex justify-center items-center flex-col w-64 cursor-pointer">
                             <svg className="w-3/4 h-3/4 text-blue-900" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                 <path fillRule="evenodd" d="M6.672 1.911a1 1 0 10-1.932.518l.259.966a1 1 0 001.932-.518l-.26-.966zM2.429 4.74a1 1 0 10-.517 1.932l.966.259a1 1 0 00.517-1.932l-.966-.26zm8.814-.569a1 1 0 00-1.415-1.414l-.707.707a1 1 0 101.415 1.415l.707-.708zm-7.071 7.072l.707-.707A1 1 0 003.465 9.12l-.708.707a1 1 0 001.415 1.415zm3.2-5.171a1 1 0 00-1.3 1.3l4 10a1 1 0 001.823.075l1.38-2.759 3.018 3.02a1 1 0 001.414-1.415l-3.019-3.02 2.76-1.379a1 1 0 00-.076-1.822l-10-4z" clipRule="evenodd" />
@@ -87,7 +87,7 @@ const Services = () => {
                             <p className="font-medium text-sm">Online Document Requisition</p>
                         </div>
                     </div>
-                </motion.div>
+                </div>
             </div>
         </div>
     )

@@ -3,7 +3,7 @@ import React from 'react'
 const Inquiries = () => {
     return (
         <div className="flex justify-center inquiriesBg">
-            <div className="max-w-7xl px-16 py-16 grid grid-cols-2 gap-10 w-full text-gray-100">
+            <div className="max-w-7xl px-16 py-16 grid lg:grid-cols-2 gap-10 w-full text-gray-100">
                 <div>
                     <h2 className="font-roboto font-bold text-3xl text-center">Frequently Asked Questions</h2>
                     <div className="grid grid-rows-1 text-black gap-5 mt-6">
@@ -17,12 +17,12 @@ const Inquiries = () => {
                     <div className="bg-gray-100 py-16 text-black">
                         <h2 className="font-roboto font-normal text-3xl text-center">Send Us Your Inquiries</h2>
                         <form className="grid grid-rows-2 gap-5 justify-items-center">
-                            <div className="grid grid-cols-2 gap-4 mt-5 px-16">
+                            <div className="grid lg:grid-cols-2 gap-4 mt-5 px-16 w-full">
                                 <div>
-                                    <input className="p-2 outline-none bg-gray-200" type="text" placeholder="Name" required />
+                                    <input className="p-2 outline-none bg-gray-200 w-full" type="text" placeholder="Name" required />
                                 </div>
                                 <div>
-                                    <input className="p-2 outline-none bg-gray-200" type="email" placeholder="Email Address" required />
+                                    <input className="p-2 outline-none bg-gray-200 w-full" type="email" placeholder="Email Address" required />
                                 </div>
                             </div>
                             <div className="w-full px-16">

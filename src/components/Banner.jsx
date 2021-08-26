@@ -36,12 +36,12 @@ const Banner = () => {
         <div className="flex justify-center schoolBanner text-gray-200">
             <div ref={ref} className="max-w-7xl w-full px-16 py-16 flex justify-center items-center">
                <div className="text-center">
-                <motion.h1 className="font-roboto font-bold text-5xl text-center select-none"
+                <motion.h1 className="font-roboto font-bold lg:text-5xl text-3xl text-center select-none"
                 variants={fadeVariant}
                 initial="hidden"
                 animate={animation}
                 >"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, rem?"</motion.h1>
-                <motion.p className="italic mt-4 select-none"
+                <motion.p className="italic mt-4 select-none lg:text-base text-sm"
                 variants={fadeVariant}
                 initial="hidden"
                 animate={animation}

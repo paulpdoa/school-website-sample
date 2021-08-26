@@ -3,33 +3,33 @@ import { motion,useAnimation } from 'framer-motion';
 import {useInView } from 'react-intersection-observer';
 import { useEffect } from 'react';
 
-const videoVariant = {
-    hidden: {
-        x:-50,
-        opacity:0
-    },
-    visible: {
-        x:0,
-        opacity:1,
-        transition: {
-            duration:1
-        }
-    }
-}
+// const videoVariant = {
+//     hidden: {
+//         x:-50,
+//         opacity:0
+//     },
+//     visible: {
+//         x:0,
+//         opacity:1,
+//         transition: {
+//             duration:1
+//         }
+//     }
+// }
 
-const welcomeVariant = {
-    hidden: {
-        x:50,
-        opacity:0
-    },
-    visible: {
-        x:0,
-        opacity:1,
-        transition: {
-            duration:1
-        }
-    }
-}
+// const welcomeVariant = {
+//     hidden: {
+//         x:50,
+//         opacity:0
+//     },
+//     visible: {
+//         x:0,
+//         opacity:1,
+//         transition: {
+//             duration:1
+//         }
+//     }
+// }
 
 const Welcome = () => {
 
@@ -48,20 +48,20 @@ const Welcome = () => {
 
     return (
         <div className="flex justify-center">
-            <div ref={ref} className="max-w-7xl px-16 py-16 grid grid-cols-2">
-                <motion.div className="flex items-center justify-center"
-                variants={videoVariant}
-                initial="hidden"
-                animate={animation}
+            <div ref={ref} className="max-w-7xl px-16 py-16 grid lg:grid-cols-2">
+                <div className="flex items-center justify-center mt-10"
+                // variants={videoVariant}
+                // initial="hidden"
+                // animate={animation}
                 >
-                    <video className="w-3/4 hover:scale-95" width="650" height="500" controls muted>
+                    <video className="lg:w-3/4 w-full hover:scale-95 shadow-xl" width="650" height="500" controls muted>
                         <source src="/videos/schoolkids.mp4" type="video/mp4"/>
                     </video>
-                </motion.div>
-                <motion.div className="text-center"
-                variants={welcomeVariant}
-                initial="hidden"
-                animate={animation}
+                </div>
+                <div className="text-center py-10"
+                // variants={welcomeVariant}
+                // initial="hidden"
+                // animate={animation}
                 >
                     <h2 className="text-3xl text-gray-800 font-bold font-roboto">Welcome to School Website Sample</h2>
                     <div className="text-center mt-4">
@@ -77,7 +77,7 @@ const Welcome = () => {
                             </div>
                         </div>  
                     </div>
-                </motion.div>
+                </div>
             </div>
         </div>
     )

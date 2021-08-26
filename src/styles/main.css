@@ -29864,7 +29864,7 @@ footer h3 {
   background-position:center;
   background-repeat: no-repeat;
   background-size: cover;
-  height:400px;
+  height:auto;
 }
 
 /* school banner */
@@ -29888,6 +29888,10 @@ footer h3 {
 }
 
 /* enroll button */
+
+.Btn:hover {
+  transition:0.4s ease-in-out;
+}
 
 .arrow {
   display:none;
