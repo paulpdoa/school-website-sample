@@ -1,11 +1,64 @@
-import React from 'react'
+import { motion,useAnimation } from 'framer-motion';
+import {useInView } from 'react-intersection-observer';
+import React,{ useState,useEffect } from 'react'
+
+const titleVariant = {
+    hidden: {
+        y:-50,
+        opacity:0
+    },
+    visible: {
+        y:0,
+        opacity:1,
+        transition: {
+            duration:1
+        }
+    }
+}
+
+const cardVariant = {
+    hidden: {
+        opacity:0,
+        scale:0
+    },
+    visible: {
+        opacity:1,
+        scale:1,
+        transition: {
+            duration:1,
+            delay:0.5
+        }
+    }
+}
 
 const Services = () => {
+
+    const animation = useAnimation();
+    const {ref,inView} = useInView({
+        threshold: 0.3
+    });
+
+    useEffect(() => {
+        if(inView) {
+            animation.start('visible')
+        } else {
+            animation.start('hidden')
+        }
+    })
+
     return (
         <div className="flex justify-center">
-            <div className="max-w-7xl px-16 py-16 w-full">
-                <h2 className="font-roboto text-gray-900 font-bold text-3xl text-center uppercase">Online Services</h2>
-                <div className="text-center mt-10">
+            <div ref={ref} className="max-w-7xl px-16 py-16 w-full">
+                <motion.h2 className="font-roboto text-gray-900 font-bold text-3xl text-center uppercase"
+                variants={titleVariant}
+                initial="hidden"
+                animate={animation}
+                >Online Services</motion.h2>
+                <motion.div className="text-center mt-10"
+                variants={cardVariant}
+                initial="hidden"
+                animate={animation}
+                >
                     <span className="text-gray-600 font-medium">Your safety is our priority.</span>
                     <p className="text-gray-600 font-medium">APPLY, ENROLL, RESERVE, and REQUEST documents online!</p>
                     <div className="grid grid-cols-4 justify-items-center py-10">
@@ -34,7 +87,7 @@ const Services = () => {
                             <p className="font-medium text-sm">Online Document Requisition</p>
                         </div>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </div>
     )

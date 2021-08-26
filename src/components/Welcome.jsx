@@ -1,16 +1,68 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
+import { motion,useAnimation } from 'framer-motion';
+import {useInView } from 'react-intersection-observer';
+import { useEffect } from 'react';
+
+const videoVariant = {
+    hidden: {
+        x:-50,
+        opacity:0
+    },
+    visible: {
+        x:0,
+        opacity:1,
+        transition: {
+            duration:1
+        }
+    }
+}
+
+const welcomeVariant = {
+    hidden: {
+        x:50,
+        opacity:0
+    },
+    visible: {
+        x:0,
+        opacity:1,
+        transition: {
+            duration:1
+        }
+    }
+}
 
 const Welcome = () => {
+
+    const animation = useAnimation();
+    const {ref,inView} = useInView({
+        threshold: 0.3
+    });
+
+    useEffect(() => {
+        if(inView) {
+            animation.start('visible')
+        } else {
+            animation.start('hidden')
+        }
+    })
+
     return (
         <div className="flex justify-center">
-            <div className="max-w-7xl px-16 py-16 grid grid-cols-2">
-                <div className="flex items-center justify-center">
-                    <video className="w-3/4" width="650" height="500" controls muted>
+            <div ref={ref} className="max-w-7xl px-16 py-16 grid grid-cols-2">
+                <motion.div className="flex items-center justify-center"
+                variants={videoVariant}
+                initial="hidden"
+                animate={animation}
+                >
+                    <video className="w-3/4 hover:scale-95" width="650" height="500" controls muted>
                         <source src="/videos/schoolkids.mp4" type="video/mp4"/>
                     </video>
-                </div>
-                <div className="text-center">
+                </motion.div>
+                <motion.div className="text-center"
+                variants={welcomeVariant}
+                initial="hidden"
+                animate={animation}
+                >
                     <h2 className="text-3xl text-gray-800 font-bold font-roboto">Welcome to School Website Sample</h2>
                     <div className="text-center mt-4">
                         <p className="italic text-gray-700 font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, cum. Quasi laudantium odio, alias neque fugiat labore nihil aut quae unde tenetur eaque magnam maiores consequuntur exercitationem doloribus corporis minus. Itaque, esse voluptatibus corporis facilis fugit ea quia quisquam sit!</p>
@@ -25,7 +77,7 @@ const Welcome = () => {
                             </div>
                         </div>  
                     </div>
-                </div>
+                </motion.div>
             </div>
         </div>
     )
