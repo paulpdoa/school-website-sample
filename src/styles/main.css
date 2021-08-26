@@ -29840,13 +29840,20 @@ video {
   }
 }
 
+/* footer titles */
+
+footer h3 {
+  font-family: Roboto Slab;
+  font-weight: 600;
+}
+
 /* inquiries background */
 
 .inquiriesBg {
   background-color: #272c26;
   opacity: 0.8;
   background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #272c26 15px ), repeating-linear-gradient( #0d17ca55, #0d17ca );
-  height:100%;
+  height:auto;
 }
 
 /* counts background */

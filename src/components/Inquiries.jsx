@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 
 const Inquiries = () => {
     return (
@@ -7,7 +6,7 @@ const Inquiries = () => {
             <div className="max-w-7xl px-16 py-16 grid grid-cols-2 gap-10 w-full text-gray-100">
                 <div>
                     <h2 className="font-roboto font-bold text-3xl text-center">Frequently Asked Questions</h2>
-                    <div className="grid grid-rows-4 text-black gap-5 mt-6">
+                    <div className="grid grid-rows-1 text-black gap-5 mt-6">
                         <div className="h-auto bg-gray-100 p-5">
                             <label className="font-roboto italic font-semibold" htmlFor="1">#1 Lorem ipsum dolor sit amet consectetur adipisicing.</label>
                             <p className="text-sm font-light text-justify mt-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe commodi omnis at? Perspiciatis eveniet, nesciunt, tempore natus quidem mollitia voluptatibus impedit voluptatum illo tenetur odit vero, dolorem laborum corporis praesentium eligendi debitis itaque totam cumque sunt. Maiores ratione illo voluptates, at tenetur est, fuga ipsum labore, iure sed commodi perferendis.</p>

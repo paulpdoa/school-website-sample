@@ -1,4 +1,4 @@
-import { Switch,Route, Redirect } from "react-router-dom";
+import { Switch,Route } from "react-router-dom";
 import { useState } from 'react';
 
 import Main from './components/Main';

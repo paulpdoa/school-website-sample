@@ -2,6 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom';
 
 const Navbar = () => {
+
     return (
         <nav className="bg-blue-900 flex justify-center py-4">
             <ul className="max-w-7xl flex justify-around w-full px-32 text-gray-100 font-normal text-sm">
@@ -47,7 +48,7 @@ const Navbar = () => {
                     <div className="pb-5 pt-2">
                         <ul className="subMenu font-semibold absolute text-blue-900 shadow-xl w-56 -left-5 px-5 py-5">
                             <li><Link to='/about'>About 1</Link></li>
-                            <li><Link to='/about2'>About 2</Link></li>
+                            <li><Link to='/aboutssas'>About 2</Link></li>
                             <li>About 3</li>
                             <li>About 4</li>
                             <li>About 5</li>
