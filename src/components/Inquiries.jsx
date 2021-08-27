@@ -2,14 +2,22 @@ import React from 'react'
 
 const Inquiries = () => {
     return (
-        <div className="flex justify-center inquiriesBg">
-            <div className="max-w-7xl px-16 py-16 grid lg:grid-cols-2 gap-10 w-full text-gray-100">
+        <div className="flex justify-center">
+            <div className="max-w-7xl px-16 py-16 grid lg:grid-cols-2 gap-10 w-full text-gray-900">
                 <div>
                     <h2 className="font-roboto font-bold lg:text-3xl text-2xl text-center">Frequently Asked Questions</h2>
-                    <div className="grid grid-rows-1 text-black gap-5 mt-6">
-                        <div className="h-auto bg-gray-100 p-5">
-                            <label className="font-roboto italic font-semibold" htmlFor="1">#1 Lorem ipsum dolor sit amet consectetur adipisicing.</label>
-                            <p className="text-sm font-light text-justify mt-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe commodi omnis at? Perspiciatis eveniet, nesciunt, tempore natus quidem mollitia voluptatibus impedit voluptatum illo tenetur odit vero, dolorem laborum corporis praesentium eligendi debitis itaque totam cumque sunt. Maiores ratione illo voluptates, at tenetur est, fuga ipsum labore, iure sed commodi perferendis.</p>
+                    <div className="grid grid-rows-4 text-black gap-5 mt-6">
+                        <div className="h-auto bg-gray-100 p-5 flex items-center">
+                            <label className="font-roboto italic font-semibold" htmlFor="1">#1 Can we now enroll online thru our school's website?</label>
+                        </div>
+                        <div className="h-auto bg-gray-100 p-5 flex items-center">
+                            <label className="font-roboto italic font-semibold" htmlFor="1">#2 Where can I see and download our payment summary and payment schedule?</label>
+                        </div>
+                        <div className="h-auto bg-gray-100 p-5 flex items-center">
+                            <label className="font-roboto italic font-semibold" htmlFor="1">#3 Do we have online yearly calendar of school activities?</label>
+                        </div>
+                        <div className="h-auto bg-gray-100 p-5 flex items-center">
+                            <label className="font-roboto italic font-semibold" htmlFor="1">#4 Can I see my son's attendance thru this website privately?</label>
                         </div>
                     </div> 
                 </div>

@@ -47,9 +47,9 @@ const Message = () => {
     // })
 
     return (
-        <div className="flex justify-center">
+        <div className="flex justify-center announceBg">
             <div className="max-w-7xl w-full px-16 py-16">
-                <div className="border-t-4 border-yellow-200 py-20 lg:grid lg:grid-cols-2">   
+                <div className="py-20 lg:grid lg:grid-cols-2">   
                     <div className="flex justify-center items-center"
                     // variants={imageVariant}
                     // initial="hidden"

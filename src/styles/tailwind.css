@@ -9,13 +9,22 @@ footer h3 {
     @apply font-roboto font-semibold;
 }
 
+/* login background */
+.login-bg { 
+  background-attachment: fixed;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: linear-gradient( rgba(0, 0, 0, 0.897), rgba(199, 194, 194, 0.5) ),url('../assets/library.jpg');
+}
+
 /* inquiries background */
-.inquiriesBg {
+/* .inquiriesBg {
     background-color: #272c26;
     opacity: 0.8;
     background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #272c26 15px ), repeating-linear-gradient( #0d17ca55, #0d17ca );
     height:auto;
-}
+} */
 
 /* counts background */
 .countsBg {
@@ -37,11 +46,37 @@ footer h3 {
 /* Announcement Background */
 .announceBg {
     background: url('../assets/announcebg.png'),url('../assets/whitebg.jpg');
+    background-attachment: fixed;
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
     height:auto;
 }
+
+/* mobile menu burger */
+.showMenuMobile {
+  animation: menu-mobile 1s ease-in-out forwards;
+}
+@keyframes menu-mobile {
+  0% {
+    opacity:0;
+    top:-20px;
+  }
+  100% {
+    opacity:1;
+    top:18rem;
+  }
+}
+
+/* service card */
+.service-icon {
+  @apply w-full h-full fill-current text-blue-900 hover:text-gray-100;
+}
+
+.service-card {
+  @apply hover:text-gray-100 hover:bg-blue-900 transition duration-200 border-2 border-gray-300 rounded-sm p-2 flex justify-center items-center flex-col w-64 cursor-pointer;
+}
+
 /* enroll button */
 .Btn:hover {
     transition:0.4s ease-in-out;

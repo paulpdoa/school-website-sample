@@ -5,16 +5,17 @@ const Header = () => {
 
     return (
         <header className="flex justify-center shadow-xl">
-            <div className="max-w-7xl grid grid-rows-1 w-full">
-                <div className="lg:grid lg:grid-cols-6 gap-5 justify-start py-5 lg:px-16">
+            <div className="max-w-7xl w-full">
+                <div className="lg:grid lg:grid-cols-6 gap-5 justify-start py-5 lg:px-5">
                     <div className="col-span-1 flex justify-center items-center rounded-xl overflow-hidden w-full select-none"> {/* logo */}
-                        <p className="lg:font-bold font-semibold text-center lg:p-5 p-2 border-2 border-blue-900 rounded-xl text-gray-800">School Logo</p>
+                        {/* <p className="lg:font-bold font-semibold text-center lg:p-5 p-2 border-2 border-blue-900 rounded-xl text-gray-800">School Logo</p> */}
+                        <img src="/images/southill.png" alt="schoollogo" />
                     </div>
                     <div className="lg:col-span-2 flex justify-center items-center"> {/* school name */}
-                        <h2 className="lg:text-4xl text-2xl lg:text-left text-center font-semibold text-blue-900 select-none">School Website Sample</h2>
+                        <h2 className="lg:text-4xl text-2xl lg:text-left text-center font-semibold text-blue-900 select-none lg:-ml-10">South Hill School, Inc.</h2>
                     </div>
                     
-                    <div className="col-span-2 lg:flex justify-around -ml-10 hidden"> {/* contact and location */}
+                    <div className="col-span-2 lg:flex justify-around -ml-5 hidden"> {/* contact and location */}
                         <div className="col-span-1">
                             <svg className="w-9 h-9 text-blue-900" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />

@@ -10,6 +10,7 @@ import Counts from './Counts';
 import Services from './Services';
 import Inquiries from './Inquiries';
 import FooterMain from './partials/FooterMain';
+import NewsEvents from './NewsEvents';
 
 const Main = ({headTitle}) => {
     return (
@@ -22,8 +23,9 @@ const Main = ({headTitle}) => {
                 <Welcome />
                 <Message />
                 <Announcements />
+                <NewsEvents />
                 <Schedule />
-                <Counts />
+                {/* <Counts /> */}
                 <Services />
                 <Inquiries />
                 <FooterMain />

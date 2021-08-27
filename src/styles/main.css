@@ -29847,14 +29847,24 @@ footer h3 {
   font-weight: 600;
 }
 
+/* login background */
+
+.login-bg {
+  background-attachment: fixed;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: linear-gradient( rgba(0, 0, 0, 0.897), rgba(199, 194, 194, 0.5) ),url('../assets/library.jpg');
+}
+
 /* inquiries background */
 
-.inquiriesBg {
-  background-color: #272c26;
-  opacity: 0.8;
-  background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #272c26 15px ), repeating-linear-gradient( #0d17ca55, #0d17ca );
-  height:auto;
-}
+/* .inquiriesBg {
+    background-color: #272c26;
+    opacity: 0.8;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #272c26 15px ), repeating-linear-gradient( #0d17ca55, #0d17ca );
+    height:auto;
+} */
 
 /* counts background */
 
@@ -29881,10 +29891,80 @@ footer h3 {
 
 .announceBg {
   background: url('../assets/announcebg.png'),url('../assets/whitebg.jpg');
+  background-attachment: fixed;
   background-position:center;
   background-repeat: no-repeat;
   background-size: cover;
   height:auto;
+}
+
+/* mobile menu burger */
+
+.showMenuMobile {
+  animation: menu-mobile 1s ease-in-out forwards;
+}
+
+@keyframes menu-mobile {
+  0% {
+    opacity:0;
+    top:-20px;
+  }
+
+  100% {
+    opacity:1;
+    top:18rem;
+  }
+}
+
+/* service card */
+
+.service-icon {
+  height: 100%;
+  width: 100%;
+  fill: currentColor;
+  --tw-text-opacity: 1;
+  color: rgba(30, 58, 138, var(--tw-text-opacity));
+}
+
+.service-icon:hover{
+  --tw-text-opacity: 1;
+  color: rgba(243, 244, 246, var(--tw-text-opacity));
+}
+
+.service-card {
+  display: flex;
+  width: 16rem;
+  cursor: pointer;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.125rem;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgba(209, 213, 219, var(--tw-border-opacity));
+}
+
+.service-card:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgba(30, 58, 138, var(--tw-bg-opacity));
+}
+
+.service-card{
+  padding: 0.5rem;
+}
+
+.service-card:hover{
+  --tw-text-opacity: 1;
+  color: rgba(243, 244, 246, var(--tw-text-opacity));
+}
+
+.service-card{
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 200ms;
 }
 
 /* enroll button */

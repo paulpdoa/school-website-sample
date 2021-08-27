@@ -16,9 +16,9 @@ const Navbar = () => {
     const [subMenu,setSubMenu] = useState(false);
 
     return (
-        <nav className={navbar ? "bg-blue-900 flex flex-col justify-center items-center py-4 z-50 w-full fixed top-0" : "bg-blue-900 flex justify-center items-center p-5 z-50"}>
+        <nav className={navbar ? "bg-blue-900 bg-opacity-90 flex flex-col justify-center items-center py-4 z-50 w-full fixed top-0" : "bg-blue-900 flex justify-center items-center p-5 z-50"}>
             
-            <div onClick={() => setSubMenu(!subMenu)} className='flex justify-start items-center bg-blue-900 lg:hidden'> {/* Hamburger mobile menu */}
+            <div onClick={() => setSubMenu(!subMenu)} className='flex justify-start items-center lg:hidden'> {/* Hamburger mobile menu */}
                 { !subMenu ? <svg className="w-6 h-6 text-gray-100 cursor-pointer" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
                 </svg> : 
@@ -29,7 +29,7 @@ const Navbar = () => {
 
             {subMenu ? 
             /* for mobile and tablets */
-            <ul className={navbar ? 'bg-transparent w-full px-5 p-5 gap-10 text-sm text-gray-100' : 'max-w-7xl lg:flex flex flex-col lg:justify-around w-full lg:px-32 text-gray-100 font-normal text-sm fixed lg:static bg-blue-900 top-48 p-5'}>
+            <ul className={navbar ? 'bg-transparent w-full px-5 p-5 gap-10 text-sm text-gray-100 showMenuMobile' : 'showMenuMobile max-w-7xl lg:flex flex flex-col lg:justify-around w-full lg:px-32 text-gray-100 font-normal text-sm fixed lg:static bg-blue-900 top-72 p-5'}>
                 <div className="flex flex-col gap-4">
                     <Link to='/'>
                         <li>HOME</li>
