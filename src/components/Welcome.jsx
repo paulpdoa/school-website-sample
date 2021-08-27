@@ -54,7 +54,7 @@ const Welcome = () => {
                 // initial="hidden"
                 // animate={animation}
                 >
-                <img className="lg:w-3/4 w-full hover:scale-95 shadow-xl" src="/images/videosample.png" alt="samplevid" />
+                <img className="lg:w-3/4 w-full hover:scale-95 shadow-xl" src="/images/videosample.png" alt="sampleimage" />
                     {/* <video className="lg:w-3/4 w-full hover:scale-95 shadow-xl" width="650" height="500" controls muted>
                         <source src="/videos/schoolkids.mp4" type="video/mp4"/>
                     </video> */}
