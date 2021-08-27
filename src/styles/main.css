@@ -29840,6 +29840,26 @@ video {
   }
 }
 
+/* enrollment background */
+
+.enroll-bg {
+  background:linear-gradient( rgba(0, 0, 0, 0.897), rgba(199, 194, 194, 0.5) ),url('../assets/writing.jpg');
+  background-attachment: fixed;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:auto;
+}
+
+/* form inputs */
+
+.form-input {
+  border-radius: 0.125rem;
+  padding: 0.25rem;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
 /* footer titles */
 
 footer h3 {
@@ -29890,12 +29910,13 @@ footer h3 {
 /* Announcement Background */
 
 .announceBg {
-  background: url('../assets/announcebg.png'),url('../assets/whitebg.jpg');
+  background: linear-gradient( rgba(0, 0, 0, 0.055), rgba(0, 0, 0, 0.116) ),url('../assets/announcebg.png'),url('../assets/whitebg.jpg');
   background-attachment: fixed;
   background-position:center;
   background-repeat: no-repeat;
   background-size: cover;
   height:auto;
+  z-index:1;
 }
 
 /* mobile menu burger */
@@ -29941,7 +29962,7 @@ footer h3 {
   border-radius: 0.125rem;
   border-width: 2px;
   --tw-border-opacity: 1;
-  border-color: rgba(209, 213, 219, var(--tw-border-opacity));
+  border-color: rgba(107, 114, 128, var(--tw-border-opacity));
 }
 
 .service-card:hover{

@@ -4,6 +4,22 @@
 @tailwind utilities;
 @tailwind components;
 
+
+
+/* enrollment background */
+.enroll-bg { 
+  background:linear-gradient( rgba(0, 0, 0, 0.897), rgba(199, 194, 194, 0.5) ),url('../assets/writing.jpg');
+  background-attachment: fixed;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:auto;
+}
+/* form inputs */
+.form-input {
+  @apply p-1 outline-none rounded-sm;
+}
+
 /* footer titles */
 footer h3 {
     @apply font-roboto font-semibold;
@@ -19,6 +35,8 @@ footer h3 {
 }
 
 /* inquiries background */
+
+
 /* .inquiriesBg {
     background-color: #272c26;
     opacity: 0.8;
@@ -45,12 +63,13 @@ footer h3 {
 }
 /* Announcement Background */
 .announceBg {
-    background: url('../assets/announcebg.png'),url('../assets/whitebg.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.055), rgba(0, 0, 0, 0.116) ),url('../assets/announcebg.png'),url('../assets/whitebg.jpg');
     background-attachment: fixed;
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
     height:auto;
+    z-index:1;
 }
 
 /* mobile menu burger */
@@ -74,7 +93,7 @@ footer h3 {
 }
 
 .service-card {
-  @apply hover:text-gray-100 hover:bg-blue-900 transition duration-200 border-2 border-gray-300 rounded-sm p-2 flex justify-center items-center flex-col w-64 cursor-pointer;
+  @apply hover:text-gray-100 hover:bg-blue-900 transition duration-200 border-2 border-gray-500 rounded-sm p-2 flex justify-center items-center flex-col w-64 cursor-pointer;
 }
 
 /* enroll button */

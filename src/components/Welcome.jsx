@@ -54,18 +54,19 @@ const Welcome = () => {
                 // initial="hidden"
                 // animate={animation}
                 >
-                    <video className="lg:w-3/4 w-full hover:scale-95 shadow-xl" width="650" height="500" controls muted>
+                <img className="lg:w-3/4 w-full hover:scale-95 shadow-xl" src="/images/videosample.png" alt="samplevid" />
+                    {/* <video className="lg:w-3/4 w-full hover:scale-95 shadow-xl" width="650" height="500" controls muted>
                         <source src="/videos/schoolkids.mp4" type="video/mp4"/>
-                    </video>
+                    </video> */}
                 </div>
                 <div className="text-center py-10"
                 // variants={welcomeVariant}
                 // initial="hidden"
                 // animate={animation}
                 >
-                    <h2 className="text-3xl text-gray-800 font-bold font-roboto">Welcome to School Website Sample</h2>
+                    <h2 className="lg:text-left text-center text-3xl text-gray-800 font-bold font-roboto">Welcome</h2>
                     <div className="text-center mt-4">
-                        <p className="italic text-gray-700 font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, cum. Quasi laudantium odio, alias neque fugiat labore nihil aut quae unde tenetur eaque magnam maiores consequuntur exercitationem doloribus corporis minus. Itaque, esse voluptatibus corporis facilis fugit ea quia quisquam sit!</p>
+                        <p className="italic text-gray-700 font-light lg:text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, cum. Quasi laudantium odio, alias neque fugiat labore nihil aut quae unde tenetur eaque magnam maiores consequuntur exercitationem doloribus corporis minus. Itaque, esse voluptatibus corporis facilis fugit ea quia quisquam sit!</p>
                         <div className="flex justify-center">
                             <div className="mt-10">
                                 <Link className="Btn bg-blue-900 px-5 py-2 text-sm flex justify-center items-center w-52 font-semibold text-gray-100" to='/history'>

@@ -4,7 +4,7 @@ const SubFooter = () => {
     return (
         <footer className="flex justify-center bg-gray-800 h-auto text-gray-100">
             <div className="max-w-7xl w-full px-16">
-                <div className="lg:flex lg:justify-around grid grid-rows-4 gap-10 p-5 border-b border-gray-700 w-full items-center lg:gap-10 py-10">
+                <div className="lg:flex lg:justify-around grid grid-rows-4 justify-items-center gap-10 p-5 border-b border-gray-700 w-full items-center lg:gap-10 py-10">
                     <div className="w-32">
                         {/* <p className="font-bold lg:p-5 p-2 text-center border-2 border-blue-900 rounded-xl">School Logo</p> */}
                         <img src="/images/southill.png" alt="schoollogo" />

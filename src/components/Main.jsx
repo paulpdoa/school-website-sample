@@ -16,7 +16,7 @@ const Main = ({headTitle}) => {
     return (
         <>
         <Helmet>
-            <title>{headTitle} | Home</title>
+            <title>Home | {headTitle}</title>
         </Helmet>
             <> {/* Main Container */}
                 <Banner />
@@ -28,7 +28,7 @@ const Main = ({headTitle}) => {
                 {/* <Counts /> */}
                 <Services />
                 <Inquiries />
-                <FooterMain />
+                {/* <FooterMain /> */}
             </>
         </>
     )

@@ -29,7 +29,7 @@ const Navbar = () => {
 
             {subMenu ? 
             /* for mobile and tablets */
-            <ul className={navbar ? 'bg-transparent w-full px-5 p-5 gap-10 text-sm text-gray-100 showMenuMobile' : 'showMenuMobile max-w-7xl lg:flex flex flex-col lg:justify-around w-full lg:px-32 text-gray-100 font-normal text-sm fixed lg:static bg-blue-900 top-72 p-5'}>
+            <ul className={navbar ? 'bg-transparent w-full px-5 p-5 gap-10 text-sm text-gray-100 showMenuMobile' : 'showMenuMobile max-w-7xl lg:flex flex flex-col lg:justify-around w-full lg:px-32 text-gray-100 font-normal text-sm fixed lg:static bg-blue-900 top-72 p-5 z-50'}>
                 <div className="flex flex-col gap-4">
                     <Link to='/'>
                         <li>HOME</li>

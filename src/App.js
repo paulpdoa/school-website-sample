@@ -5,16 +5,18 @@ import Main from './components/Main';
 import NavMain from "./components/partials/NavMain";
 import NotFound from "./components/NotFound";
 import Login from "./components/auth/Login";
+import Enrollment from "./components/Enrollment";
+import FooterMain from "./components/partials/FooterMain";
 
 const App = () => {
 
-  const[headTitle] = useState('School Website Sample');
+  const[headTitle] = useState('South Hill School');
 
   return (
     <>
       <Switch>
       <Route exact path='/login'>
-        <Login />
+        <Login headTitle={headTitle} />
       </Route>
 
         <>
@@ -24,10 +26,15 @@ const App = () => {
               <Main headTitle={headTitle} />
             </Route>
 
+            <Route exact path='/enrollment'>
+              <Enrollment headTitle={headTitle} />
+            </Route>
+
             <Route>
               <NotFound />
             </Route>
           </Switch>
+          <FooterMain />
         </> 
       </Switch>
     </>

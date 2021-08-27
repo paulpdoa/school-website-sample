@@ -4,10 +4,10 @@ import SubFooter from './SubFooter'
 
 const FooterMain = () => {
     return (
-        <>
+        <footer className="absolutew-full">
             <SubFooter />
             <Footer />
-        </>
+        </footer>
     )
 }
 
