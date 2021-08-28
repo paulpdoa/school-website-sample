@@ -3,7 +3,7 @@ import { useState,useEffect } from 'react';
 
 const Enrollment = ({headTitle}) => {
     const [birthday,setBirthday] = useState('');
-    const[age,setAge] = useState(0);
+    const[age,setAge] = useState('');
     // const [first,setFirst] = useState(false);
 
     useEffect(() => {
@@ -11,7 +11,7 @@ const Enrollment = ({headTitle}) => {
         let bday = new Date(birthday).getFullYear();
         let newAge = now-bday;
         if(newAge <= 0 || isNaN(newAge)) {
-            setAge(0);
+            setAge('Enter your birthday');
         } else {
             setAge(newAge);
         }
@@ -25,6 +25,7 @@ const Enrollment = ({headTitle}) => {
         <div className="enroll-bg flex justify-center items-center">
         <Helmet>
             <title>Enrollment | {headTitle}</title>
+            <meta name="viewport" content="width=device-width, user-scalable=no" />
         </Helmet>
             <div className="max-w-7xl lg:px-16 px-5 py-16 w-full">
                 <h2 className="text-5xl font-normal select-none text-gray-100">Admission</h2>
@@ -63,7 +64,7 @@ const Enrollment = ({headTitle}) => {
                             </div>
                             <div className="w-full">
                                 <label className="text-gray-100" htmlFor="age">Age*</label><br/>
-                                <input value={age} className="form-input w-full" type="text" readOnly />
+                                <input value={age} className="form-input w-full select-none" type="text" readOnly />
                             </div>
                             <div className="w-full">
                                 <label className="text-gray-100" htmlFor="age">Gender*</label><br/>
@@ -90,7 +91,7 @@ const Enrollment = ({headTitle}) => {
                                 <input className="form-input w-full" type="text" required />
                             </div>
                             <div className="w-full">
-                                <label className="text-gray-100" htmlFor="postalcode">Postal Code</label><br/>
+                                <label className="text-gray-100" htmlFor="postalcode">Zip Code</label><br/>
                                 <input className="form-input w-full" type="text" required />
                             </div>
                         </div>

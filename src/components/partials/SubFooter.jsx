@@ -6,7 +6,6 @@ const SubFooter = () => {
             <div className="max-w-7xl w-full px-16">
                 <div className="lg:flex lg:justify-around grid grid-rows-4 justify-items-center gap-10 p-5 border-b border-gray-700 w-full items-center lg:gap-10 py-10">
                     <div className="flex gap-5 items-center">
-                        {/* <p className="font-bold lg:p-5 p-2 text-center border-2 border-blue-900 rounded-xl">School Logo</p> */}
                         <img src="/images/southill.png" alt="schoollogo" />
                         <span className="text-xl">South Hill<br/>School,<br/> Inc.</span>
                     </div>

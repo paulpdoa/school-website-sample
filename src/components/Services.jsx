@@ -1,6 +1,6 @@
-import { motion,useAnimation } from 'framer-motion';
-import {useInView } from 'react-intersection-observer';
-import React,{ useEffect } from 'react'
+// import { motion,useAnimation } from 'framer-motion';
+// import {useInView } from 'react-intersection-observer';
+// import React,{ useEffect } from 'react'
 import { Link } from 'react-router-dom';
 
 // const titleVariant = {

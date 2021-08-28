@@ -1,9 +1,9 @@
 import React,{useState} from 'react'
 import Calendar from 'react-calendar';
 // import 'react-calendar/dist/Calendar.css';
-import { motion,useAnimation } from 'framer-motion';
-import {useInView } from 'react-intersection-observer';
-import { useEffect } from 'react';
+// import { motion,useAnimation } from 'framer-motion';
+// import {useInView } from 'react-intersection-observer';
+// import { useEffect } from 'react';
 
 // const titleVariant = {
 //     hidden: {
@@ -57,18 +57,18 @@ const Schedule = () => {
         setDate(changedDate);
     }
 
-    const animation = useAnimation();
-    const {ref,inView} = useInView({
-        threshold: 0.3
-    });
+    // const animation = useAnimation();
+    // const {ref,inView} = useInView({
+    //     threshold: 0.3
+    // });
 
-    useEffect(() => {
-        if(inView) {
-            animation.start('visible')
-        } else {
-            animation.start('hidden')
-        }
-    })
+    // useEffect(() => {
+    //     if(inView) {
+    //         animation.start('visible')
+    //     } else {
+    //         animation.start('hidden')
+    //     }
+    // })
 
     return (
         <div className="flex justify-center">

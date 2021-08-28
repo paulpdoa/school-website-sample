@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
-import { motion,useAnimation } from 'framer-motion';
-import {useInView } from 'react-intersection-observer';
-import { useEffect } from 'react';
+// import { motion,useAnimation } from 'framer-motion';
+// import {useInView } from 'react-intersection-observer';
+// import { useEffect } from 'react';
 
 // const videoVariant = {
 //     hidden: {
@@ -33,22 +33,22 @@ import { useEffect } from 'react';
 
 const Welcome = () => {
 
-    const animation = useAnimation();
-    const {ref,inView} = useInView({
-        threshold: 0.3
-    });
+    // const animation = useAnimation();
+    // const {ref,inView} = useInView({
+    //     threshold: 0.3
+    // });
 
-    useEffect(() => {
-        if(inView) {
-            animation.start('visible')
-        } else {
-            animation.start('hidden')
-        }
-    })
+    // useEffect(() => {
+    //     if(inView) {
+    //         animation.start('visible')
+    //     } else {
+    //         animation.start('hidden')
+    //     }
+    // })
 
     return (
         <div className="flex justify-center">
-            <div ref={ref} className="max-w-7xl px-16 py-16 grid lg:grid-cols-2">
+            <div className="max-w-7xl px-16 py-16 grid lg:grid-cols-2">
                 <div className="flex items-center justify-center mt-10"
                 // variants={videoVariant}
                 // initial="hidden"

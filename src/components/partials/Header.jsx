@@ -7,8 +7,7 @@ const Header = () => {
         <header className="flex justify-center shadow-xl">
             <div className="max-w-7xl w-full">
                 <div className="lg:grid lg:grid-cols-6 gap-5 justify-start py-5 lg:px-5">
-                    <div className="col-span-1 flex justify-center items-center rounded-xl overflow-hidden w-full select-none ml-10"> {/* logo */}
-                        {/* <p className="lg:font-bold font-semibold text-center lg:p-5 p-2 border-2 border-blue-900 rounded-xl text-gray-800">School Logo</p> */}
+                    <div className="col-span-1 flex justify-center items-center rounded-xl overflow-hidden w-full select-none lg:ml-10">
                         <img src="/images/southill.png" alt="schoollogo" />
                     </div>
                     <div className="lg:col-span-2 flex justify-center items-center"> {/* school name */}

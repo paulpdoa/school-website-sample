@@ -6,10 +6,9 @@ import Banner from './Banner'
 import Schedule from './Schedule';
 import Message from './Message';
 import Welcome from './Welcome'
-import Counts from './Counts';
+// import Counts from './Counts';
 import Services from './Services';
 import Inquiries from './Inquiries';
-import FooterMain from './partials/FooterMain';
 import NewsEvents from './NewsEvents';
 
 const Main = ({headTitle}) => {
@@ -17,6 +16,7 @@ const Main = ({headTitle}) => {
         <>
         <Helmet>
             <title>Home | {headTitle}</title>
+            <meta name="viewport" content="width=device-width, user-scalable=no" />
         </Helmet>
             <> {/* Main Container */}
                 <Banner />
@@ -25,10 +25,8 @@ const Main = ({headTitle}) => {
                 <Announcements />
                 <NewsEvents />
                 <Schedule />
-                {/* <Counts /> */}
                 <Services />
                 <Inquiries />
-                {/* <FooterMain /> */}
             </>
         </>
     )
