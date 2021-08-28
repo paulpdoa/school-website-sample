@@ -17,7 +17,7 @@
 }
 /* form inputs */
 .form-input {
-  @apply p-1 outline-none rounded-sm;
+  @apply p-1 outline-none rounded-sm border border-gray-300;
 }
 
 /* footer titles */
@@ -93,7 +93,7 @@ footer h3 {
 }
 
 .service-card {
-  @apply hover:text-gray-100 hover:bg-blue-900 transition duration-200 border-2 border-gray-500 rounded-sm p-2 flex justify-center items-center flex-col w-64 cursor-pointer;
+  @apply hover:text-gray-100 hover:bg-blue-900 border-2 border-gray-300 rounded-sm shadow-xl flex justify-center items-center flex-col w-64 cursor-pointer transition duration-300 transform hover:-translate-y-5;
 }
 
 /* enroll button */
@@ -101,13 +101,23 @@ footer h3 {
     transition:0.4s ease-in-out;
 }
 .arrow {
-    display:none;
-    color:white;
-    transition:0.4s ease-in-out;
+  display:none;
 }
 .Btn:hover .arrow {
+  display:block;
+  animation: arrow 0.7s ease-in-out forwards;
+}
+
+@keyframes arrow { 
+  0% {
+    opacity:0;
+    margin-left: -50px;
+  }
+  100% {
+    opacity:1;
     display:block;
-    animation: arrow 1 ease-in-out forwards;
+    margin-left:0px;
+  }
 }
 
 /* submenu */

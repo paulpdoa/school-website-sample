@@ -44,11 +44,16 @@ const Navbar = () => {
                         
                         <div className="pt-2">
                             <ul className="subMenu p-2 text-blue-900 font-semibold">
-                                <li><Link to='/about'>About 1</Link></li>
-                                <li><Link to='/about2'>About 2</Link></li>
-                                <li>About 3</li>
-                                <li>About 4</li>
-                                <li>About 5</li>
+                                <li><Link to='#'>History</Link></li>
+                                <li><Link to='#'>Vision | Mission | Philosophy and Objectives</Link></li>
+                                <li>Logo and Core Values</li>
+                                <li>Our Hymn</li>
+                                <li>School Recognition</li>
+                                <li>Accreditation and Certification</li>
+                                <li>Memberships</li>
+                                <li>School Facilities</li>
+                                <li>Campus Map</li>
+                                <li>Organizational Chart</li>
                             </ul>
                         </div>
                         
@@ -63,11 +68,10 @@ const Navbar = () => {
                         
                         <div className="pt-2">
                             <ul className="subMenu p-2 text-blue-900 font-semibold">
-                                <li><Link to='/about'>About 1</Link></li>
-                                <li><Link to='/about2'>About 2</Link></li>
-                                <li>About 3</li>
-                                <li>About 4</li>
-                                <li>About 5</li>
+                                <li>Pre-Elementary</li>
+                                <li>Elementary</li>
+                                <li>Junior High School</li>
+                                <li>Senior High School</li>
                             </ul>
                         </div>
                     </Link>
@@ -81,11 +85,9 @@ const Navbar = () => {
                         
                         <div className="pt-2">
                             <ul className="subMenu p-2 text-blue-900 font-semibold">
-                                <li><Link to='/about'>About 1</Link></li>
-                                <li><Link to='/aboutssas'>About 2</Link></li>
-                                <li>About 3</li>
-                                <li>About 4</li>
-                                <li>About 5</li>
+                                <li>Application Requirements and Procedure</li>
+                                <li>Downloadable Forms</li>
+                                <li>Online Services</li>
                             </ul>
                         </div>
                     </Link>
@@ -99,11 +101,10 @@ const Navbar = () => {
                         
                         <div className="pt-2">
                             <ul className="subMenu p-2 text-blue-900 font-semibold">
-                                <li><Link to='/about'>About 1</Link></li>
-                                <li><Link to='/about2'>About 2</Link></li>
-                                <li>About 3</li>
-                                <li>About 4</li>
-                                <li>About 5</li>
+                                <li>Office of the Registrar</li>
+                                <li>Student Services</li>
+                                <li>Administration</li>
+                                <li>Finance</li>
                             </ul>
                         </div>
                     </Link>
@@ -116,11 +117,11 @@ const Navbar = () => {
                             </div>
                         <div className="pt-2">
                             <ul className="subMenu p-2 text-blue-900 font-semibold">
-                                <li><Link to='/about'>About 1</Link></li>
-                                <li><Link to='/about2'>About 2</Link></li>
-                                <li>About 3</li>
-                                <li>About 4</li>
-                                <li>About 5</li>
+                                <li>School Board</li>
+                                <li>Executive Community</li>
+                                <li>Faculty and Staff</li>
+                                <li>School Affairs Committee</li>
+                                <li>Affiliates</li>
                             </ul>
                         </div>
                     </Link>
@@ -133,11 +134,8 @@ const Navbar = () => {
                         </div>
                         <div className="pt-2">
                             <ul className="subMenu p-2 text-blue-900 font-semibold">
-                                <li><Link to='/about'>About 1</Link></li>
-                                <li><Link to='/about2'>About 2</Link></li>
-                                <li>About 3</li>
-                                <li>About 4</li>
-                                <li>About 5</li>
+                                <li>Alumni Association</li>
+                                <li>Events and Activities</li>
                             </ul>
                         </div>
                     </Link>
@@ -158,11 +156,16 @@ const Navbar = () => {
                     </svg>
                     <div className="pb-5 pt-2">
                         <ul className="subMenu font-semibold absolute text-blue-900 shadow-xl w-56 -left-5 px-5 py-5">
-                            <li><Link to='/about'>About 1</Link></li>
-                            <li><Link to='/about2'>About 2</Link></li>
-                            <li>About 3</li>
-                            <li>About 4</li>
-                            <li>About 5</li>
+                            <li><Link to='#'>History</Link></li>
+                            <li><Link to='#'>Vision | Mission | Philosophy and Objectives</Link></li>
+                            <li>Logo and Core Values</li>
+                            <li>Our Hymn</li>
+                            <li>School Recognition</li>
+                            <li>Accreditation and Certification</li>
+                            <li>Memberships</li>
+                            <li>School Facilities</li>
+                            <li>Campus Map</li>
+                            <li>Organizational Chart</li>
                         </ul>
                     </div>
                     
@@ -174,11 +177,10 @@ const Navbar = () => {
                     </svg>
                     <div className="pb-5 pt-2">
                         <ul className="subMenu font-semibold absolute text-blue-900 shadow-xl w-56 -left-5 px-5 py-5">
-                            <li><Link to='/about'>About 1</Link></li>
-                            <li><Link to='/about2'>About 2</Link></li>
-                            <li>About 3</li>
-                            <li>About 4</li>
-                            <li>About 5</li>
+                            <li>Pre-Elementary</li>
+                            <li>Elementary</li>
+                            <li>Junior High School</li>
+                            <li>Senior High School</li>
                         </ul>
                     </div>
                 </Link>
@@ -189,11 +191,9 @@ const Navbar = () => {
                     </svg>
                     <div className="pb-5 pt-2">
                         <ul className="subMenu font-semibold absolute text-blue-900 shadow-xl w-56 -left-5 px-5 py-5">
-                            <li><Link to='/about'>About 1</Link></li>
-                            <li><Link to='/aboutssas'>About 2</Link></li>
-                            <li>About 3</li>
-                            <li>About 4</li>
-                            <li>About 5</li>
+                            <li>Application Requirements and Procedure</li>
+                            <li>Downloadable Forms</li>
+                            <li>Online Services</li>
                         </ul>
                     </div>
                 </Link>
@@ -204,11 +204,10 @@ const Navbar = () => {
                     </svg>
                     <div className="pb-5 pt-2">
                         <ul className="subMenu font-semibold absolute text-blue-900 shadow-xl w-56 -left-5 px-5 py-5">
-                            <li><Link to='/about'>About 1</Link></li>
-                            <li><Link to='/about2'>About 2</Link></li>
-                            <li>About 3</li>
-                            <li>About 4</li>
-                            <li>About 5</li>
+                            <li>Office of the Registrar</li>
+                            <li>Student Services</li>
+                            <li>Administration</li>
+                            <li>Finance</li>
                         </ul>
                     </div>
                 </Link>
@@ -219,11 +218,11 @@ const Navbar = () => {
                     </svg>
                     <div className="pb-5 pt-2">
                         <ul className="subMenu font-semibold absolute text-blue-900 shadow-xl w-56 -left-5 px-5 py-5">
-                            <li><Link to='/about'>About 1</Link></li>
-                            <li><Link to='/about2'>About 2</Link></li>
-                            <li>About 3</li>
-                            <li>About 4</li>
-                            <li>About 5</li>
+                            <li>School Board</li>
+                            <li>Executive Community</li>
+                            <li>Faculty and Staff</li>
+                            <li>School Affairs Committee</li>
+                            <li>Affiliates</li>
                         </ul>
                     </div>
                 </Link>
@@ -234,11 +233,8 @@ const Navbar = () => {
                     </svg>
                     <div className="pb-5 pt-2">
                         <ul className="subMenu font-semibold absolute text-blue-900 shadow-xl w-56 -left-5 px-5 py-5">
-                            <li><Link to='/about'>About 1</Link></li>
-                            <li><Link to='/about2'>About 2</Link></li>
-                            <li>About 3</li>
-                            <li>About 4</li>
-                            <li>About 5</li>
+                            <li>Alumni Association</li>
+                            <li>Events and Activities</li>
                         </ul>
                     </div>
                 </Link>

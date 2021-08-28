@@ -29855,6 +29855,9 @@ video {
 
 .form-input {
   border-radius: 0.125rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgba(209, 213, 219, var(--tw-border-opacity));
   padding: 0.25rem;
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -29955,6 +29958,21 @@ footer h3 {
 .service-card {
   display: flex;
   width: 16rem;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.service-card:hover{
+  --tw-translate-y: -1.25rem;
+}
+
+.service-card{
   cursor: pointer;
   flex-direction: column;
   align-items: center;
@@ -29962,30 +29980,25 @@ footer h3 {
   border-radius: 0.125rem;
   border-width: 2px;
   --tw-border-opacity: 1;
-  border-color: rgba(107, 114, 128, var(--tw-border-opacity));
+  border-color: rgba(209, 213, 219, var(--tw-border-opacity));
 }
 
 .service-card:hover{
   --tw-bg-opacity: 1;
   background-color: rgba(30, 58, 138, var(--tw-bg-opacity));
-}
-
-.service-card{
-  padding: 0.5rem;
-}
-
-.service-card:hover{
   --tw-text-opacity: 1;
   color: rgba(243, 244, 246, var(--tw-text-opacity));
 }
 
 .service-card{
+  --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-  transition-duration: 200ms;
+  transition-duration: 300ms;
 }
 
 /* enroll button */
@@ -29996,13 +30009,24 @@ footer h3 {
 
 .arrow {
   display:none;
-  color:white;
-  transition:0.4s ease-in-out;
 }
 
 .Btn:hover .arrow {
   display:block;
-  animation: arrow 1 ease-in-out forwards;
+  animation: arrow 0.7s ease-in-out forwards;
+}
+
+@keyframes arrow {
+  0% {
+    opacity:0;
+    margin-left: -50px;
+  }
+
+  100% {
+    opacity:1;
+    display:block;
+    margin-left:0px;
+  }
 }
 
 /* submenu */
